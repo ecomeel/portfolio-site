@@ -182,6 +182,45 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   left: 50px;
 }
 .projects .projects__button {
+  box-sizing: border-box;
   background-color: #1BFF07;
   padding: 56px 85px 58px 86px;
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 39px;
+  color: #000;
+}
+.projects .projects__button:hover {
+  background-color: #000;
+  color: #1BFF07;
+  border: 1px solid #1BFF07;
+}
+
+.competencies .competencies__title {
+  margin-bottom: 48px;
+}
+.competencies .competence {
+  margin-bottom: 60px;
+}
+.competencies .competence .competence__img-box {
+  margin-bottom: 12px;
+  background-color: #1BFF07;
+  width: 45px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.competencies .competence .competence__title {
+  margin-bottom: 15px;
+}
+.competencies .competence .competence__desc {
+  line-height: 28.6px;
+  width: 778px;
+}
+.competencies .competence:last-child {
+  margin-bottom: 0px;
+}
+.competencies .competence:last-child .competence__title {
+  width: 651px;
 }/*# sourceMappingURL=style.css.map */

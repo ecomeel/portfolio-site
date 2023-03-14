@@ -124,8 +124,48 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         }
     }
     .projects__button {
+        box-sizing: border-box;
         background-color: $green-text;
         padding: 56px 85px 58px 86px;
+        border-radius: 10px;
+        font-size: 30px;
+        line-height: 39px;
+        color: #000;
+        &:hover {
+            background-color: #000;
+            color: $green-text;
+            border: 1px solid $green-text;
+        }
     }
 }
+.competencies {
+    .competencies__title {
+        margin-bottom: 48px;
+    }
+    .competence {
+        margin-bottom: 60px;
+        .competence__img-box {
+            margin-bottom: 12px;
+            background-color: $green-text;
+            width: 45px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .competence__title {
+            margin-bottom: 15px;
 
+        }
+        .competence__desc {
+            line-height: 28.6px;
+            width: 778px;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+            .competence__title {
+                width: 651px;
+            }
+        }
+    }
+}
