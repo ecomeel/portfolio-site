@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  min-height: 100%;
+}
+
+a {
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, div {
+  letter-spacing: -0.03em;
+}
+
+._container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 27px;
+  left: 0;
+}
+.header .header__container {
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+}
+.header .header__container .header__logo {
+  margin-top: 9px;
+  margin-bottom: 7px;
+  padding-left: 9px;
+  border-radius: 100px;
+  background-color: #000;
+  width: 130px;
+  height: 39px;
+  text-transform: uppercase;
+  letter-spacing: -0.11em;
+  font-weight: 700;
+  font-size: 42.41px;
+  color: #1BFF07;
+}
+.header .header__container .menu__list {
+  margin-top: 6px;
+  display: flex;
+  column-gap: 50px;
+}
+.header .header__container .menu__list .menu__link {
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.main-block {
+  padding-top: 334px;
+  padding-bottom: 94px;
+  background-image: url("../img/main-block/main-pict.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-block .main-block__desc {
+  max-width: 430px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main-block .main-block__title {
+  margin-top: 29px;
+  max-width: 919px;
+  color: #1BFF07;
+  font-size: 80px;
+  line-height: 70px;
+}/*# sourceMappingURL=style.css.map */
