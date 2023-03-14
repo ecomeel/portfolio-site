@@ -108,7 +108,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         margin-top: 40px;
         margin-bottom: 80px + 56px;
         .project {
-            height: 550px;
+            max-height: 550px;
+            max-width: 100%;
             position: relative;
             .project__title {
                 position: absolute;
@@ -149,6 +150,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             background-color: $green-text;
             width: 45px;
             height: 44px;
+            border-radius: 10px;
             display: flex;
             justify-content: center;
             align-items: center;

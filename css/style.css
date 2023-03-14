@@ -167,7 +167,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-bottom: 136px;
 }
 .projects .projects__list .project {
-  height: 550px;
+  max-height: 550px;
+  max-width: 100%;
   position: relative;
 }
 .projects .projects__list .project .project__title {
@@ -207,6 +208,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   background-color: #1BFF07;
   width: 45px;
   height: 44px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
