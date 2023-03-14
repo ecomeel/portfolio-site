@@ -23,6 +23,20 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 ._container {
     @include container;
 }
+.page > *:not(:first-child) {
+    margin-top: 150px;
+}
+
+.title {
+    color: white;
+    @extend %title-text;
+}
+.subtitle {
+    color: $green-text;
+    @extend %subtitle-text;
+}
+
+
 .wrapper {    
     min-height: 100%;
     overflow: hidden;
@@ -61,11 +75,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             .menu__link {
                 font-size: 18px;
                 line-height: 23.4px;
+                &:hover {
+                    color: $green-text;
+                }
             }
         }
     }
 }
-
 .main-block {
     padding-top: 334px;
     padding-bottom: 94px;
@@ -87,3 +103,29 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         line-height: 70px;
     }
 }
+.projects {
+    .projects__list {
+        margin-top: 40px;
+        margin-bottom: 80px + 56px;
+        .project {
+            height: 550px;
+            position: relative;
+            .project__title {
+                position: absolute;
+                bottom: 94px;
+                left: 50px;
+                color: #fff;
+            }
+            .project__desc {
+                position: absolute;
+                bottom: 50px;
+                left: 50px
+            }
+        }
+    }
+    .projects__button {
+        background-color: $green-text;
+        padding: 56px 85px 58px 86px;
+    }
+}
+

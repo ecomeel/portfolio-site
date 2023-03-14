@@ -53,6 +53,16 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 55px;
+  line-height: 72.5px;
+}
+
+.subtitle {
+  font-size: 35px;
+  line-height: 45.5px;
+}
+
 html, body {
   background-color: #000;
   color: #fff;
@@ -74,6 +84,18 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 ._container {
   max-width: 1150px;
   margin: 0 auto;
+}
+
+.page > *:not(:first-child) {
+  margin-top: 150px;
+}
+
+.title {
+  color: white;
+}
+
+.subtitle {
+  color: #1BFF07;
 }
 
 .wrapper {
@@ -115,6 +137,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   font-size: 18px;
   line-height: 23.4px;
 }
+.header .header__container .menu__list .menu__link:hover {
+  color: #1BFF07;
+}
 
 .main-block {
   padding-top: 334px;
@@ -135,4 +160,28 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   color: #1BFF07;
   font-size: 80px;
   line-height: 70px;
+}
+
+.projects .projects__list {
+  margin-top: 40px;
+  margin-bottom: 136px;
+}
+.projects .projects__list .project {
+  height: 550px;
+  position: relative;
+}
+.projects .projects__list .project .project__title {
+  position: absolute;
+  bottom: 94px;
+  left: 50px;
+  color: #fff;
+}
+.projects .projects__list .project .project__desc {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.projects .projects__button {
+  background-color: #1BFF07;
+  padding: 56px 85px 58px 86px;
 }/*# sourceMappingURL=style.css.map */
