@@ -1,9 +1,6 @@
 @import "reset/reset";
 @import "extensions/ext";
 $green-color: #1BFF07;
-// img {
-//     width: 100%;
-// }
 html, body {
     background-color: #000;
     color: #fff;
@@ -18,7 +15,6 @@ html, body {
 a {
     color: #fff;
 }
-
 h1, h2, h3, h4, h5, h6, p, a, div {
     letter-spacing: -0.03em;
 }
@@ -29,7 +25,6 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .page > *:not(:first-child) {
     margin-top: 150px;
 }
-
 .title {
     color: white;
     @extend %title-text;
@@ -42,7 +37,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .wrapper {    
     min-height: 100%;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .header {
