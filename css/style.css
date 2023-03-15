@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .wrapper {
   min-height: 100%;
+  overflow: hidden;
 }
 
 .header {
@@ -282,16 +283,14 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   background-color: #191C19;
   height: 717px;
   border-radius: 30px;
-  display: flex;
 }
 .feedback .feedback__container {
   position: relative;
 }
 .feedback .feedback__container .feedback__text-block {
   position: absolute;
-  bottom: 86px;
+  top: 320px;
   left: 0;
-  margin-left: -150px;
 }
 .feedback .feedback__container .feedback__text-block .feedback__title {
   width: 201px;
@@ -309,6 +308,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 }
 .feedback .feedback__back-img {
   float: right;
+  height: 100%;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 50%;

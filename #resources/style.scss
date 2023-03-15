@@ -226,14 +226,12 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     background-color: #191C19;
     height: 717px;
     border-radius: 30px;
-    display: flex;
     .feedback__container {
         position: relative;
         .feedback__text-block {
             position: absolute;
-            bottom: 86px;
+            top: 320px;
             left: 0;
-            margin-left: -150px;
             .feedback__title {
                 width: 201px;
                 @extend %subtitle-text;
@@ -253,6 +251,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     }
     .feedback__back-img {
         float: right;
+        height: 100%;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
         width: 50%;
