@@ -9,8 +9,8 @@ html, body {
     color: #fff;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 22px;
+    line-height: 28.6px;
     font-weight: 400;
-    line-height: 1;
     min-height: 100%;
 }
 a {
@@ -21,7 +21,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     letter-spacing: -0.03em;
 }
 ._container {
-    @include container;
+    max-width: 1150px;
+    margin: 0 auto;
 }
 .page > *:not(:first-child) {
     margin-top: 150px;
@@ -169,5 +170,96 @@ h1, h2, h3, h4, h5, h6, p, a, div {
                 width: 651px;
             }
         }
+    }
+}
+.services {
+    .services__title {
+        margin-bottom: 73px;
+        max-width: 403px;
+        @extend %subtitle-text;
+    }
+    .service__text-block {
+        background-color: #191C19;
+        border-radius: 30px;
+        min-height: 283px;
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-right: 69px;
+        .service__subtitle {
+            @extend %title-text;
+            color: $green-text;
+            margin-bottom: 15px;
+        }
+        .service__desc {
+            max-width: 749px;
+            &:last-child {
+                max-width: 724px;
+            }
+        }
+    }
+    .service {
+        &:first-child {
+            margin-bottom: 74px;
+        }
+        &:last-child {
+            margin-top: 137px;
+        }
+    }
+}
+.feedback {
+    background-color: #191C19;
+    max-height: 717px;
+    border-radius: 30px;
+    display: flex;
+    .feedback__container {
+        position: relative;
+        // width: 50%;
+        .feedback__text-block {
+            position: absolute;
+            bottom: 89px;
+            left: 0;
+            margin-left: -150px;
+            .feedback__title {
+                width: 201px;
+                @extend %subtitle-text;
+                margin-bottom: 28px;
+            }
+            .feedback__social:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            .feedback__social-link {
+                font-size: 60px;
+                line-height: 60px;
+                &:hover {
+                    color: $green-text;
+                }
+            }
+        }
+    }
+    .feedback__back-img {
+        float: right;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 50%;
+        object-fit: cover;
+    }
+
+}
+.footer {
+    margin-top: 150px;
+    padding-top: 76px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    .footer__title {
+        line-height: 30.05px;
+        color: #000;
+    }
+    .footer__all-rights {
+        margin-top: 66px;
+        color: rgba($color: #000000, $alpha: 0.5);
+        font-size: 20px;
+        line-height: 27.32px;
     }
 }
