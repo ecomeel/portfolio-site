@@ -281,9 +281,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     }
 }
 
-@media (max-with: 1149px) {
-    .wrapper {
-        padding-left: 5px;
-        padding-right: 5px;
+@media (max-width: 1149px) {
+    .header, .main-block, .projects, .competencies, .services, .footer {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
