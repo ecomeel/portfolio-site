@@ -19,32 +19,39 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 a {
   text-decoration: none;
 }
-
 
 .services .service__text-block .service__subtitle, .title {
   font-size: 55px;
@@ -64,6 +71,7 @@ html, body {
   line-height: 28.6px;
   font-weight: 400;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 a {
