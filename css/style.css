@@ -63,6 +63,10 @@ a {
   line-height: 45.5px;
 }
 
+img {
+  width: 100%;
+}
+
 html, body {
   background-color: #000;
   color: #fff;
@@ -71,6 +75,7 @@ html, body {
   line-height: 28.6px;
   font-weight: 400;
   min-height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
 }
 
