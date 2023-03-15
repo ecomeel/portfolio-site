@@ -63,10 +63,6 @@ a {
   line-height: 45.5px;
 }
 
-img {
-  width: 100%;
-}
-
 html, body {
   background-color: #000;
   color: #fff;
@@ -174,6 +170,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   line-height: 70px;
 }
 
+.projects img {
+  width: 100%;
+}
 .projects .projects__title {
   margin-left: -5px;
 }
@@ -247,6 +246,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   width: 651px;
 }
 
+.services img {
+  width: 100%;
+}
 .services .services__title {
   margin-bottom: 73px;
   max-width: 403px;
@@ -332,5 +334,4 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   font-family: Manrope;
   font-size: 20px;
   line-height: 27.32px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

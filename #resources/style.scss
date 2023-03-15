@@ -1,9 +1,9 @@
 @import "reset/reset";
 @import "extensions/ext";
 $green-color: #1BFF07;
-img {
-    width: 100%;
-}
+// img {
+//     width: 100%;
+// }
 html, body {
     background-color: #000;
     color: #fff;
@@ -112,6 +112,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     }
 }
 .projects {
+    img {
+        width: 100%;
+    }
     .projects__title {
         margin-left: -5px;
     }
@@ -188,6 +191,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     }
 }
 .services {
+    img {
+        width: 100%;
+    }
     .services__title {
         margin-bottom: 73px;
         max-width: 403px;
