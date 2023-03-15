@@ -102,6 +102,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .wrapper {
   min-height: 100%;
+  overflow: hidden;
 }
 
 .header {
@@ -334,4 +335,11 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   font-family: Manrope;
   font-size: 20px;
   line-height: 27.32px;
+}
+
+@media (max-with: 1149px) {
+  .wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */
