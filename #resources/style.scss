@@ -1,8 +1,8 @@
 @import "reset/reset";
 @import "extensions/ext";
-@import "mixins/mixins";
-@import "vars/vars";
-
+// @import "mixins/mixins";
+// @import "vars/vars";
+$green-color: #1BFF07;
 
 html, body {
     background-color: #000;
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     @extend %title-text;
 }
 .subtitle {
-    color: $green-text;
+    color: $green-color;
     @extend %subtitle-text;
 }
 
@@ -53,31 +53,35 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         display: flex;
         justify-content: space-between;
         height: 55px;
-        .header__logo {
-            margin-top: 9px;
-            margin-bottom: 7px;
-            padding-left: 9px;
-            border-radius: 100px;
+        .header__logo-box {
             background-color: #000;
-            width: 130px;
             height: 39px;
-
-            text-transform: uppercase;
-            letter-spacing: -0.11em;
-            font-weight: 700;
-            font-size: 42.41px;
-            color: $green-text;
-
+            width: 130px;
+            border-radius: 100px;
+            margin-top: 9px;
+            margin-left: -2px;
+            padding-right: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .header__logo {
+                text-transform: uppercase;
+                letter-spacing: -0.11em;
+                font-weight: 700;
+                font-size: 42.41px;
+                color: $green-color;
+            }
         }
         .menu__list {
-            margin-top: 6px;
+            margin-top: 2px;
+            margin-right: 2px;
             display: flex;
             column-gap: 50px;
             .menu__link {
                 font-size: 18px;
                 line-height: 23.4px;
                 &:hover {
-                    color: $green-text;
+                    color: $green-color;
                 }
             }
         }
@@ -85,7 +89,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 }
 .main-block {
     padding-top: 334px;
-    padding-bottom: 94px;
+    padding-bottom: 89px;
     background-image: url('../img/main-block/main-pict.jpg');
     background-position: 50%;
     background-size: cover;
@@ -98,13 +102,17 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     }
     .main-block__title {
         margin-top: 29px;
+        margin-left: -7px;
         max-width: 919px;
-        color: $green-text;
+        color: $green-color;
         font-size: 80px;
         line-height: 70px;
     }
 }
 .projects {
+    .projects__title {
+        margin-left: -5px;
+    }
     .projects__list {
         margin-top: 40px;
         margin-bottom: 80px + 56px;
@@ -121,34 +129,39 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             .project__desc {
                 position: absolute;
                 bottom: 50px;
-                left: 50px
+                left: 50px;
+                font-size: 30px;
+                line-height: 39px;
             }
         }
     }
     .projects__button {
         box-sizing: border-box;
-        background-color: $green-text;
-        padding: 56px 85px 58px 86px;
+        background-color: $green-color;
+        padding: 56px 120px 58px 120px;
         border-radius: 10px;
         font-size: 30px;
         line-height: 39px;
         color: #000;
         &:hover {
             background-color: #000;
-            color: $green-text;
-            border: 1px solid $green-text;
+            color: $green-color;
+            border: 1px solid $green-color;
         }
     }
 }
 .competencies {
+    .competencies__container {
+        margin-top: 207px;
+    }
     .competencies__title {
         margin-bottom: 48px;
     }
     .competence {
-        margin-bottom: 60px;
+        margin-bottom: 63px;
         .competence__img-box {
-            margin-bottom: 12px;
-            background-color: $green-text;
+            margin-bottom: 14px;
+            background-color: $green-color;
             width: 45px;
             height: 44px;
             border-radius: 10px;
@@ -157,7 +170,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             align-items: center;
         }
         .competence__title {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
 
         }
         .competence__desc {
@@ -181,13 +194,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     .service__text-block {
         background-color: #191C19;
         border-radius: 30px;
-        min-height: 283px;
+        min-height: 277px;
         padding-left: 40px;
-        padding-top: 40px;
+        padding-top: 36px;
         padding-right: 69px;
         .service__subtitle {
             @extend %title-text;
-            color: $green-text;
+            color: $green-color;
             margin-bottom: 15px;
         }
         .service__desc {
@@ -213,16 +226,15 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     display: flex;
     .feedback__container {
         position: relative;
-        // width: 50%;
         .feedback__text-block {
             position: absolute;
-            bottom: 89px;
+            bottom: 86px;
             left: 0;
             margin-left: -150px;
             .feedback__title {
                 width: 201px;
                 @extend %subtitle-text;
-                margin-bottom: 28px;
+                margin-bottom: 37px;
             }
             .feedback__social:not(:last-child) {
                 margin-bottom: 20px;
@@ -231,7 +243,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
                 font-size: 60px;
                 line-height: 60px;
                 &:hover {
-                    color: $green-text;
+                    color: $green-color;
                 }
             }
         }
@@ -254,11 +266,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     border-top-right-radius: 30px;
     .footer__title {
         line-height: 30.05px;
+        font-family: Manrope;
         color: #000;
     }
     .footer__all-rights {
         margin-top: 66px;
         color: rgba($color: #000000, $alpha: 0.5);
+        font-family: Manrope;
         font-size: 20px;
         line-height: 27.32px;
     }
