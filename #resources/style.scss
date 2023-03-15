@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         position: relative;
         .feedback__text-block {
             position: absolute;
-            top: 320px;
+            top: 330px;
             left: 0;
             .feedback__title {
                 width: 201px;
@@ -277,5 +277,12 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         font-family: Manrope;
         font-size: 20px;
         line-height: 27.32px;
+    }
+}
+
+@media (max-width: 1149px) {
+    .header, .main-block, .projects, .competencies, .services, .footer {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
