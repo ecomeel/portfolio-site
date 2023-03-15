@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     top: 27px;
     left: 0;
     
-    .header__container {
+    &__container {
         display: flex;
         justify-content: space-between;
         height: 55px;
@@ -92,12 +92,12 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     background-size: cover;
     background-repeat: no-repeat;
 
-    .main-block__desc {
+    &__desc {
         max-width: 430px;
         font-size: 20px;
         line-height: 26px;
     }
-    .main-block__title {
+    &__title {
         margin-top: 29px;
         margin-left: -7px;
         max-width: 919px;
@@ -110,23 +110,23 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     img {
         width: 100%;
     }
-    .projects__title {
+    &__title {
         margin-left: -5px;
     }
-    .projects__list {
+    &__list {
         margin-top: 40px;
         margin-bottom: 80px + 56px;
         .project {
             max-height: 550px;
             max-width: 100%;
             position: relative;
-            .project__title {
+            &__title {
                 position: absolute;
                 bottom: 94px;
                 left: 50px;
                 color: #fff;
             }
-            .project__desc {
+            &__desc {
                 position: absolute;
                 bottom: 50px;
                 left: 50px;
@@ -151,15 +151,15 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     }
 }
 .competencies {
-    .competencies__container {
+    &__container {
         margin-top: 207px;
     }
-    .competencies__title {
+    &__title {
         margin-bottom: 48px;
     }
     .competence {
         margin-bottom: 63px;
-        .competence__img-box {
+        &__img-box {
             margin-bottom: 14px;
             background-color: $green-color;
             width: 45px;
@@ -169,11 +169,11 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             justify-content: center;
             align-items: center;
         }
-        .competence__title {
+        &__title {
             margin-bottom: 16px;
 
         }
-        .competence__desc {
+        &__desc {
             line-height: 28.6px;
             width: 778px;
         }
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     img {
         width: 100%;
     }
-    .services__title {
+    &__title {
         margin-bottom: 73px;
         max-width: 403px;
         @extend %subtitle-text;
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     background-color: #191C19;
     height: 717px;
     border-radius: 30px;
-    .feedback__container {
+    &__container {
         position: relative;
         .feedback__text-block {
             position: absolute;
@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             }
         }
     }
-    .feedback__back-img {
+    &__back-img {
         float: right;
         height: 100%;
         border-top-right-radius: 30px;
@@ -266,12 +266,12 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     background-color: #fff;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    .footer__title {
+    &__title {
         line-height: 30.05px;
         font-family: Manrope;
         color: #000;
     }
-    .footer__all-rights {
+    &__all-rights {
         margin-top: 66px;
         color: rgba($color: #000000, $alpha: 0.5);
         font-family: Manrope;
