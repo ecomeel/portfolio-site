@@ -51,9 +51,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         justify-content: space-between;
         height: 55px;
         .header__logo-box {
-            background-color: #000;
+            background-color: #beb3b3;
             height: 39px;
-            width: 130px;
+            width: 140px;
             border-radius: 100px;
             margin-top: 9px;
             margin-left: -2px;
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             align-items: center;
             .header__logo {
                 text-transform: uppercase;
-                letter-spacing: -0.11em;
+                letter-spacing: -0.08em;
                 font-weight: 700;
                 font-size: 42.41px;
                 color: $green-color;
