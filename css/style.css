@@ -178,6 +178,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .projects img {
   width: 100%;
+  border-radius: 50px;
+  max-height: 550px;
 }
 .projects__title {
   margin-left: -5px;
@@ -187,22 +189,14 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-bottom: 136px;
 }
 .projects__list .project {
-  max-height: 550px;
   max-width: 100%;
   position: relative;
 }
-.projects__list .project__title {
-  position: absolute;
-  bottom: 94px;
-  left: 50px;
-  color: #fff;
-}
-.projects__list .project__desc {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  font-size: 30px;
-  line-height: 39px;
+.projects__list .project:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .projects .projects__button {
   box-sizing: border-box;

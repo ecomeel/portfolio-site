@@ -114,6 +114,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .projects {
     img {
         width: 100%;
+        border-radius: 50px;
+        max-height: 550px;
+
     }
     &__title {
         margin-left: -5px;
@@ -122,21 +125,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         margin-top: 40px;
         margin-bottom: 80px + 56px;
         .project {
-            max-height: 550px;
             max-width: 100%;
             position: relative;
-            &__title {
-                position: absolute;
-                bottom: 94px;
-                left: 50px;
-                color: #fff;
-            }
-            &__desc {
-                position: absolute;
-                bottom: 50px;
-                left: 50px;
-                font-size: 30px;
-                line-height: 39px;
+            &:nth-child(2) {
+                border: 1px solid white;
+                border-radius: 50px;
+                margin-top: 5px;
+                margin-bottom: 10px;
             }
         }
     }
