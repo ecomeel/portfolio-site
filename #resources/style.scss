@@ -51,9 +51,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         justify-content: space-between;
         height: 55px;
         .header__logo-box {
-            background-color: #000;
+            background-color: #beb3b3;
             height: 39px;
-            width: 130px;
+            width: 140px;
             border-radius: 100px;
             margin-top: 9px;
             margin-left: -2px;
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             align-items: center;
             .header__logo {
                 text-transform: uppercase;
-                letter-spacing: -0.11em;
+                letter-spacing: -0.08em;
                 font-weight: 700;
                 font-size: 42.41px;
                 color: $green-color;
@@ -77,8 +77,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             .menu__link {
                 font-size: 18px;
                 line-height: 23.4px;
+                border-radius: 15px;
+                padding-left: 7px;
+                padding-right: 7px;
+                padding-bottom: 3px;
                 &:hover {
                     color: $green-color;
+                    background-color: #beb3b322;
                 }
             }
         }
@@ -87,8 +92,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .main-block {
     padding-top: 334px;
     padding-bottom: 89px;
-    background-image: url('../img/main-block/main-pict.jpg');
-    background-position: 50%;
+    background-image: url('../img/main-block/main-block.JPG');
+    background-position: 50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -109,6 +114,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .projects {
     img {
         width: 100%;
+        border-radius: 50px;
+        max-height: 550px;
+
     }
     &__title {
         margin-left: -5px;
@@ -117,21 +125,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         margin-top: 40px;
         margin-bottom: 80px + 56px;
         .project {
-            max-height: 550px;
             max-width: 100%;
             position: relative;
-            &__title {
-                position: absolute;
-                bottom: 94px;
-                left: 50px;
-                color: #fff;
-            }
-            &__desc {
-                position: absolute;
-                bottom: 50px;
-                left: 50px;
-                font-size: 30px;
-                line-height: 39px;
+            &:nth-child(2) {
+                border: 1px solid white;
+                border-radius: 50px;
+                margin-top: 5px;
+                margin-bottom: 10px;
             }
         }
     }

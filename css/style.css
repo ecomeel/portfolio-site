@@ -117,9 +117,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   height: 55px;
 }
 .header__container .header__logo-box {
-  background-color: #000;
+  background-color: #beb3b3;
   height: 39px;
-  width: 130px;
+  width: 140px;
   border-radius: 100px;
   margin-top: 9px;
   margin-left: -2px;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 }
 .header__container .header__logo-box .header__logo {
   text-transform: uppercase;
-  letter-spacing: -0.11em;
+  letter-spacing: -0.08em;
   font-weight: 700;
   font-size: 42.41px;
   color: #687db4;
@@ -144,16 +144,21 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .header__container .menu__list .menu__link {
   font-size: 18px;
   line-height: 23.4px;
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 3px;
 }
 .header__container .menu__list .menu__link:hover {
   color: #687db4;
+  background-color: rgba(190, 179, 179, 0.1333333333);
 }
 
 .main-block {
   padding-top: 334px;
   padding-bottom: 89px;
-  background-image: url("../img/main-block/main-pict.jpg");
-  background-position: 50%;
+  background-image: url("../img/main-block/main-block.JPG");
+  background-position: 50% 30%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -173,6 +178,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .projects img {
   width: 100%;
+  border-radius: 50px;
+  max-height: 550px;
 }
 .projects__title {
   margin-left: -5px;
@@ -182,22 +189,14 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-bottom: 136px;
 }
 .projects__list .project {
-  max-height: 550px;
   max-width: 100%;
   position: relative;
 }
-.projects__list .project__title {
-  position: absolute;
-  bottom: 94px;
-  left: 50px;
-  color: #fff;
-}
-.projects__list .project__desc {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
-  font-size: 30px;
-  line-height: 39px;
+.projects__list .project:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .projects .projects__button {
   box-sizing: border-box;
