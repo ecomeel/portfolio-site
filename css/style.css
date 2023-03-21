@@ -144,9 +144,14 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .header__container .menu__list .menu__link {
   font-size: 18px;
   line-height: 23.4px;
+  border-radius: 15px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 3px;
 }
 .header__container .menu__list .menu__link:hover {
   color: #687db4;
+  background-color: rgba(190, 179, 179, 0.1333333333);
 }
 
 .main-block {

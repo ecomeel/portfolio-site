@@ -77,8 +77,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
             .menu__link {
                 font-size: 18px;
                 line-height: 23.4px;
+                border-radius: 15px;
+                padding-left: 7px;
+                padding-right: 7px;
+                padding-bottom: 3px;
                 &:hover {
                     color: $green-color;
+                    background-color: #beb3b322;
                 }
             }
         }
