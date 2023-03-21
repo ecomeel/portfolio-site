@@ -214,12 +214,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
         }
     }
     .service {
-        &:first-child {
-            margin-bottom: 74px;
-        }
-        &:last-child {
-            margin-top: 137px;
-        }
+        margin-bottom: 74px;
+        // &:first-child {
+        //     margin-bottom: 74px;
+        // }
+        // &:last-child {
+        //     margin-top: 137px;
+        // }
     }
 }
 .feedback {

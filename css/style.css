@@ -271,11 +271,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .services .service__text-block .service__desc:last-child {
   max-width: 724px;
 }
-.services .service:first-child {
+.services .service {
   margin-bottom: 74px;
-}
-.services .service:last-child {
-  margin-top: 137px;
 }
 
 .feedback {
