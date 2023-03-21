@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   height: 55px;
 }
 .header__container .header__logo-box {
-  background-color: #beb3b3;
+  background-color: rgba(190, 179, 179, 0.2901960784);
   height: 39px;
   width: 140px;
   border-radius: 100px;
