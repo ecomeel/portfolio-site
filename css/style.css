@@ -83,13 +83,13 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   letter-spacing: -0.03em;
 }
 
+.page > *:not(:first-child) {
+  margin-top: 150px;
+}
+
 ._container {
   max-width: 1150px;
   margin: 0 auto;
-}
-
-.page > *:not(:first-child) {
-  margin-top: 150px;
 }
 
 .title {
@@ -98,11 +98,6 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .subtitle {
   color: #687db4;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
 }
 
 .header {
@@ -116,7 +111,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   justify-content: space-between;
   height: 55px;
 }
-.header__container .header__logo-box {
+.header__logo-box {
   background-color: rgba(190, 179, 179, 0.2901960784);
   height: 39px;
   width: 140px;
@@ -128,20 +123,21 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   justify-content: center;
   align-items: center;
 }
-.header__container .header__logo-box .header__logo {
+.header__logo-box .header__logo {
   text-transform: uppercase;
   letter-spacing: -0.08em;
   font-weight: 700;
   font-size: 42.41px;
   color: #687db4;
 }
-.header__container .menu__list {
+
+.menu__list {
   margin-top: 2px;
   margin-right: 2px;
   display: flex;
   column-gap: 50px;
 }
-.header__container .menu__list .menu__link {
+.menu__list .menu__link {
   font-size: 18px;
   line-height: 23.4px;
   border-radius: 15px;
@@ -149,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   padding-right: 7px;
   padding-bottom: 3px;
 }
-.header__container .menu__list .menu__link:hover {
+.menu__list .menu__link:hover {
   color: #687db4;
   background-color: rgba(190, 179, 179, 0.1333333333);
 }
@@ -178,8 +174,10 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .projects img {
   width: 100%;
+  object-fit: cover;
+  object-position: 0% 0%;
   border-radius: 50px;
-  max-height: 550px;
+  height: 550px;
 }
 .projects__title {
   margin-left: -5px;
@@ -195,8 +193,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .projects__list .project:nth-child(2) {
   border: 1px solid white;
   border-radius: 50px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: -7px;
 }
 .projects .projects__button {
   box-sizing: border-box;

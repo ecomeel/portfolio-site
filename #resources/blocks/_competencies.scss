@@ -1,0 +1,35 @@
+.competencies {
+    &__container {
+        margin-top: 207px;
+    }
+    &__title {
+        margin-bottom: 48px;
+    }
+    .competence {
+        margin-bottom: 63px;
+        &__img-box {
+            margin-bottom: 14px;
+            background-color: $green-color;
+            width: 45px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title {
+            margin-bottom: 16px;
+
+        }
+        &__desc {
+            line-height: 28.6px;
+            width: 778px;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+            .competence__title {
+                width: 651px;
+            }
+        }
+    }
+}

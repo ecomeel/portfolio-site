@@ -1,0 +1,37 @@
+.feedback {
+    background-color: #191C19;
+    height: 717px;
+    border-radius: 30px;
+    &__container {
+        position: relative;
+        .feedback__text-block {
+            position: absolute;
+            top: 330px;
+            left: 0;
+            .feedback__title {
+                width: 201px;
+                @extend %subtitle-text;
+                margin-bottom: 37px;
+            }
+            .feedback__social:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            .feedback__social-link {
+                font-size: 60px;
+                line-height: 60px;
+                &:hover {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+    &__back-img {
+        float: right;
+        height: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 50%;
+        object-fit: cover;
+    }
+
+}
