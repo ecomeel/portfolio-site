@@ -34,9 +34,9 @@
 
 .menu__list {
     margin-top: 2px;
-    margin-right: 2px;
+    margin-right: -7px;
     display: flex;
-    column-gap: 50px;
+    column-gap: 37px;
 
     .menu__link {
         font-size: 18px;
@@ -51,4 +51,8 @@
             background-color: #beb3b322;
         }
     }
+}
+
+.burger-btn {
+    display: none;
 }

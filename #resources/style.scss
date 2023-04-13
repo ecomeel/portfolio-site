@@ -3,11 +3,8 @@
 
 $green-color: #687db4;
 
-
 @import "init-styles";
 @import "common-styles";
-
-
 
 @import "blocks/header";
 @import "blocks/main-block";
@@ -17,12 +14,91 @@ $green-color: #687db4;
 @import "blocks/feedback";
 @import "blocks/footer";
 
-
-
-
-@media (max-width: 1149px) {
-    .header, .main-block, .projects, .competencies, .services, .footer {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+// @media (max-width: 1149px) {
+//   .header,
+//   .main-block,
+//   .projects,
+//   .competencies,
+//   .services,
+//   .footer {
+//     padding-left: 10px;
+//     padding-right: 10px;
+//   }
+// }
+@media (max-width: 1200px) {
+  ._container {
+    padding: 0 15px;
+  }
 }
+@media (max-width: 960px) {
+  .title {
+    font-size: 45px;
+    line-height: 58.5px;
+  }
+  .header {
+    top: 23px;
+    &__menu {
+      display: none;
+    }
+    .burger-btn {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 15px;
+      width: 50px;
+      height: 50px;
+      background-image: url('../img/header/burger-btn.png');
+      background-size: cover;
+      cursor: pointer;
+    }
+  }
+  .main-block {
+    padding-top: 368px;
+    padding-bottom: 60px;
+    &__title {
+      font-size: 60px;
+    }
+  }
+  .projects {
+    img {
+      height: 445px;
+    }
+    &__list {
+      margin-top: 53px;
+      margin-bottom: 120px;
+    }
+    .project {
+      &__title {
+        font-size: 28px;
+        line-height: 36.4px;
+        bottom: 76px;
+        left: 40px;
+      }
+      &__subtitle {
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 21.86px;
+        border-radius: 80px;
+        left: 40px;
+        top: 40px;
+      }
+      &__desc {
+        font-size: 24px;
+        line-height: 31.2px;
+        left: 40px;
+        bottom: 40px;
+      }
+    }
+    &__button {
+      padding: 45px 67px;
+      font-size: 24px;
+      line-height: 31.54px;
+    }
+  }
+  .competencies {
+    &__title {
+      margin-bottom: 28px;
+    }
+  }
+}
+

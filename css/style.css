@@ -53,12 +53,12 @@ a {
   text-decoration: none;
 }
 
-.services .service__text-block .service__subtitle, .title {
+.services .service__subtitle, .title {
   font-size: 55px;
   line-height: 72.5px;
 }
 
-.feedback__container .feedback__text-block .feedback__title, .services__title, .subtitle {
+.feedback__title, .services__title, .subtitle {
   font-size: 35px;
   line-height: 45.5px;
 }
@@ -133,9 +133,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 
 .menu__list {
   margin-top: 2px;
-  margin-right: 2px;
+  margin-right: -7px;
   display: flex;
-  column-gap: 50px;
+  column-gap: 37px;
 }
 .menu__list .menu__link {
   font-size: 18px;
@@ -148,6 +148,10 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .menu__list .menu__link:hover {
   color: #687db4;
   background-color: rgba(190, 179, 179, 0.1333333333);
+}
+
+.burger-btn {
+  display: none;
 }
 
 .main-block {
@@ -176,8 +180,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   width: 100%;
   object-fit: cover;
   object-position: 0% 0%;
-  border-radius: 50px;
-  height: 550px;
+  border-radius: 30px;
+  height: 543px;
 }
 .projects__title {
   margin-left: -5px;
@@ -190,12 +194,37 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   max-width: 100%;
   position: relative;
 }
-.projects__list .project:nth-child(2) {
-  border: 1px solid white;
-  border-radius: 50px;
-  margin-top: -7px;
+.projects__list .project__title {
+  position: absolute;
+  left: 50px;
+  bottom: 94px;
+  font-size: 35px;
+  line-height: 45.5px;
 }
-.projects .projects__button {
+.projects__list .project__subtitle {
+  padding: 10px 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 20px;
+  line-height: 27.32px;
+  background-color: #687db4;
+  border-radius: 100px;
+}
+.projects__list .project__desc {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font-size: 30px;
+  line-height: 39px;
+}
+.projects__list .project:last-of-type {
+  color: black;
+}
+.projects__list .project:last-of-type .project__subtitle {
+  color: white;
+}
+.projects__button {
   box-sizing: border-box;
   background-color: #687db4;
   padding: 56px 120px 58px 120px;
@@ -204,7 +233,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   line-height: 39px;
   color: #000;
 }
-.projects .projects__button:hover {
+.projects__button:hover {
   background-color: #000;
   color: #687db4;
   border: 1px solid #687db4;
@@ -214,10 +243,16 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-top: 207px;
 }
 .competencies__title {
-  margin-bottom: 48px;
+  margin-bottom: 80px;
+}
+.competencies__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 50px;
 }
 .competencies .competence {
-  margin-bottom: 63px;
+  flex: 1 0 49%;
 }
 .competencies .competence__img-box {
   margin-bottom: 14px;
@@ -234,42 +269,35 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 }
 .competencies .competence__desc {
   line-height: 28.6px;
-  width: 778px;
-}
-.competencies .competence:last-child {
-  margin-bottom: 0px;
-}
-.competencies .competence:last-child .competence__title {
-  width: 651px;
 }
 
 .services img {
   width: 100%;
 }
 .services__title {
-  margin-bottom: 73px;
+  margin-bottom: 80px;
   max-width: 403px;
 }
+.services .service {
+  margin-bottom: 65px;
+}
 .services .service__text-block {
+  padding: 40px 45px 40px 40px;
+  display: flex;
   background-color: #191C19;
   border-radius: 30px;
-  min-height: 277px;
-  padding-left: 40px;
-  padding-top: 36px;
-  padding-right: 69px;
 }
-.services .service__text-block .service__subtitle {
+.services .service__subtitle {
+  flex: 1 0 50%;
   color: #687db4;
   margin-bottom: 15px;
 }
-.services .service__text-block .service__desc {
-  max-width: 749px;
+.services .service__desc {
+  flex: 1 0 50%;
 }
-.services .service__text-block .service__desc:last-child {
-  max-width: 724px;
-}
-.services .service {
-  margin-bottom: 74px;
+.services .service:last-of-type {
+  margin-top: 95px;
+  margin-bottom: -35px;
 }
 
 .feedback {
@@ -280,23 +308,43 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .feedback__container {
   position: relative;
 }
-.feedback__container .feedback__text-block {
+.feedback__text-block {
   position: absolute;
-  top: 330px;
-  left: 0;
 }
-.feedback__container .feedback__text-block .feedback__title {
-  width: 201px;
-  margin-bottom: 37px;
-}
-.feedback__container .feedback__text-block .feedback__social:not(:last-child) {
-  margin-bottom: 20px;
-}
-.feedback__container .feedback__text-block .feedback__social-link {
+.feedback__title {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  max-width: 553px;
   font-size: 60px;
   line-height: 60px;
+  margin-bottom: 37px;
 }
-.feedback__container .feedback__text-block .feedback__social-link:hover {
+.feedback__input {
+  display: block;
+  width: 70%;
+  padding: 16px 40px;
+  font-size: 22px;
+  line-height: 28.6px;
+  color: #fff;
+  background-color: #3B3D3B;
+  border: none;
+  border-radius: 100px;
+}
+.feedback__input:first-of-type {
+  margin-bottom: 26px;
+}
+.feedback__send-btn {
+  padding: 19px 19px 22px 20px;
+  margin-top: 60px;
+  margin-bottom: 101px;
+  width: 450px;
+  font-size: 22px;
+  line-height: 28.6px;
+  background-color: #687db4;
+}
+.feedback__send-btn:hover {
+  background-color: #191C19;
+  border: 1px solid #687db4;
   color: #687db4;
 }
 .feedback__back-img {
@@ -309,29 +357,112 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 }
 
 .footer {
-  margin-top: 150px;
+  margin-top: 10px;
   padding-top: 76px;
   padding-bottom: 20px;
   background-color: #fff;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__wrapper_bottom {
+  margin-top: 66px;
+}
 .footer__title {
   line-height: 30.05px;
   font-family: Manrope;
   color: #000;
 }
-.footer__all-rights {
-  margin-top: 66px;
+.footer__social-list {
+  display: flex;
+}
+.footer__social:not(:last-of-type) {
+  margin-right: 24px;
+}
+.footer__social-link {
+  color: #000;
+}
+.footer__social-link:hover {
+  color: #687db4;
+  border-bottom: 2px solid #687db4;
+}
+.footer__all-rights, .footer__political {
   color: rgba(0, 0, 0, 0.5);
   font-family: Manrope;
   font-size: 20px;
   line-height: 27.32px;
 }
 
-@media (max-width: 1149px) {
-  .header, .main-block, .projects, .competencies, .services, .footer {
-    padding-left: 10px;
-    padding-right: 10px;
+@media (max-width: 1200px) {
+  ._container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 960px) {
+  .title {
+    font-size: 45px;
+    line-height: 58.5px;
+  }
+  .header {
+    top: 23px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header .burger-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/header/burger-btn.png");
+    background-size: cover;
+    cursor: pointer;
+  }
+  .main-block {
+    padding-top: 368px;
+    padding-bottom: 60px;
+  }
+  .main-block__title {
+    font-size: 60px;
+  }
+  .projects img {
+    height: 445px;
+  }
+  .projects__list {
+    margin-top: 53px;
+    margin-bottom: 120px;
+  }
+  .projects .project__title {
+    font-size: 28px;
+    line-height: 36.4px;
+    bottom: 76px;
+    left: 40px;
+  }
+  .projects .project__subtitle {
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 21.86px;
+    border-radius: 80px;
+    left: 40px;
+    top: 40px;
+  }
+  .projects .project__desc {
+    font-size: 24px;
+    line-height: 31.2px;
+    left: 40px;
+    bottom: 40px;
+  }
+  .projects__button {
+    padding: 45px 67px;
+    font-size: 24px;
+    line-height: 31.54px;
+  }
+  .competencies__title {
+    margin-bottom: 28px;
   }
 }/*# sourceMappingURL=style.css.map */
