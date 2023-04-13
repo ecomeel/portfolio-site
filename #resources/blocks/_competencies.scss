@@ -3,10 +3,16 @@
         margin-top: 207px;
     }
     &__title {
-        margin-bottom: 48px;
+        margin-bottom: 80px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 50px;
     }
     .competence {
-        margin-bottom: 63px;
+        flex: 1 0 49%;
         &__img-box {
             margin-bottom: 14px;
             background-color: $green-color;
@@ -23,13 +29,6 @@
         }
         &__desc {
             line-height: 28.6px;
-            width: 778px;
-        }
-        &:last-child{
-            margin-bottom: 0px;
-            .competence__title {
-                width: 651px;
-            }
         }
     }
 }
