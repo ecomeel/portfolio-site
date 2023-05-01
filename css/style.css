@@ -541,4 +541,25 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     font-size: 14px;
     line-height: 19.12px;
   }
+}
+@media (max-width: 767px) {
+  .feedback__title {
+    font-size: 35px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .feedback__title {
+    max-width: 100%;
+    width: 77.5%;
+  }
+  .feedback__input {
+    width: 100%;
+  }
+  .feedback__send-btn {
+    width: 100%;
+  }
+  .feedback__back-img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
