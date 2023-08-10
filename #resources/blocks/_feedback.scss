@@ -33,6 +33,7 @@
         }
     }
     &__send-btn {
+        transition: all .5s ease;
         padding: 19px 19px 22px 20px;
         margin-top: 60px;
         margin-bottom: 101px;

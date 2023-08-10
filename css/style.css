@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   column-gap: 37px;
 }
 .menu__list .menu__link {
+  transition: all 0.3s ease;
   font-size: 18px;
   line-height: 23.4px;
   border-radius: 15px;
@@ -147,7 +148,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 }
 .menu__list .menu__link:hover {
   color: #687db4;
-  background-color: rgba(190, 179, 179, 0.1333333333);
+  background-color: rgba(190, 179, 179, 0.2705882353);
 }
 
 .burger-btn {
@@ -179,7 +180,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
 .projects img {
   width: 100%;
   object-fit: cover;
-  object-position: 0% 0%;
+  object-position: 50% 0%;
   border-radius: 30px;
   height: 543px;
 }
@@ -191,6 +192,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-bottom: 136px;
 }
 .projects__list .project {
+  transition: opacity 0.5s ease;
   max-width: 100%;
   position: relative;
 }
@@ -218,7 +220,11 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   font-size: 30px;
   line-height: 39px;
 }
+.projects__list .project:hover {
+  opacity: 0.5;
+}
 .projects__button {
+  transition: all 0.5s ease;
   box-sizing: border-box;
   background-color: #687db4;
   padding: 56px 120px 58px 120px;
@@ -327,6 +333,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-bottom: 26px;
 }
 .feedback__send-btn {
+  transition: all 0.5s ease;
   padding: 19px 19px 22px 20px;
   margin-top: 60px;
   margin-bottom: 101px;
@@ -377,6 +384,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   margin-right: 24px;
 }
 .footer__social-link {
+  transition: all 0.2s ease;
   color: #000;
 }
 .footer__social-link:hover {
