@@ -2,7 +2,7 @@
   img {
     width: 100%;
     object-fit: cover;
-    object-position: 0% 0%;
+    object-position: 50% 0%;
     border-radius: 30px;
     height: 543px;
   }
@@ -13,6 +13,7 @@
     margin-top: 40px;
     margin-bottom: 80px + 56px;
     .project {
+      transition: opacity .5s ease;
       max-width: 100%;
       position: relative;
       &__title {
@@ -39,15 +40,14 @@
         font-size: 30px;
         line-height: 39px;
       }
-      &:last-of-type {
-        color: black;
-        .project__subtitle {
-          color: white;
-        }
+
+      &:hover {
+        opacity: .5;
       }
     }
   }
   &__button {
+    transition: all .5s ease;
     box-sizing: border-box;
     background-color: $green-color;
     padding: 56px 120px 58px 120px;

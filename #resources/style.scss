@@ -14,17 +14,7 @@ $green-color: #687db4;
 @import "blocks/feedback";
 @import "blocks/footer";
 
-// @media (max-width: 1149px) {
-//   .header,
-//   .main-block,
-//   .projects,
-//   .competencies,
-//   .services,
-//   .footer {
-//     padding-left: 10px;
-//     padding-right: 10px;
-//   }
-// }
+
 @media (max-width: 1200px) {
   ._container {
     padding: 0 15px;
@@ -183,3 +173,35 @@ $green-color: #687db4;
   }
 }
 
+@media (max-width: 767px) {
+  .feedback {
+      &__title {
+          font-size: 35px;
+          max-width: 300px;
+      }
+  }
+}
+
+@media (max-width: 600px) {
+  .feedback {
+    &__title {
+      max-width: 100%;
+      width: 77.5%;
+    }
+    &__input {
+      width: 100%;
+    }
+    &__send-btn {
+      width: 100%;
+
+    }
+    
+    &__back-img {
+      display: none;
+    }
+  }
+}
+
+
+// сделать мудиа при 500пх и ниже
+// сделать бургер

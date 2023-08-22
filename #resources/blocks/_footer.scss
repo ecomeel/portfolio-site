@@ -25,6 +25,7 @@
         margin-right: 24px;
     }
     &__social-link {
+        transition: all .2s ease;
         color: #000;
         &:hover {
             color: $green-color;
