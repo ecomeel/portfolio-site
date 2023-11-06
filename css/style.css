@@ -558,17 +558,34 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   .competencies__list {
     flex-direction: column;
   }
+  .service__text-block {
+    flex-direction: column;
+  }
+  .service__subtitle, .service__desc {
+    width: 100%;
+  }
+  .feedback__text-block {
+    width: 95%;
+  }
   .feedback__title {
+    width: 100%;
     max-width: 100%;
-    width: 77.5%;
+    text-align: center;
   }
   .feedback__input {
     width: 100%;
+    box-sizing: border-box;
   }
   .feedback__send-btn {
     width: 100%;
   }
   .feedback__back-img {
     display: none;
+  }
+  .footer__wrapper {
+    column-gap: 30px;
+  }
+  .footer__social-list {
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */

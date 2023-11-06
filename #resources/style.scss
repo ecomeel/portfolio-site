@@ -14,203 +14,227 @@ $green-color: #687db4;
 @import "blocks/feedback";
 @import "blocks/footer";
 
-
 @media (max-width: 1200px) {
-  ._container {
-    padding: 0 15px;
-  }
+    ._container {
+        padding: 0 15px;
+    }
 }
 @media (max-width: 960px) {
-  .title {
-    font-size: 45px;
-    line-height: 58.5px;
-  }
-  .subtitle {
-    font-size: 28px;
-    line-height: 36.4px;
-  }
-  .header {
-    top: 23px;
-    &__menu {
-      display: none;
+    .title {
+        font-size: 45px;
+        line-height: 58.5px;
     }
-    .burger-btn {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 15px;
-      width: 50px;
-      height: 50px;
-      background-image: url('../img/header/burger-btn.png');
-      background-size: cover;
-      cursor: pointer;
-    }
-  }
-  .main-block {
-    padding-top: 368px;
-    padding-bottom: 60px;
-    &__title {
-      font-size: 60px;
-    }
-  }
-  .projects {
-    img {
-      height: 445px;
-    }
-    &__list {
-      margin-top: 53px;
-      margin-bottom: 120px;
-    }
-    .project {
-      &__title {
+    .subtitle {
         font-size: 28px;
         line-height: 36.4px;
-        bottom: 76px;
-        left: 40px;
-      }
-      &__subtitle {
-        padding: 8px 16px;
-        font-size: 16px;
-        line-height: 21.86px;
-        border-radius: 80px;
-        left: 40px;
-        top: 40px;
-      }
-      &__desc {
-        font-size: 24px;
-        line-height: 31.2px;
-        left: 40px;
-        bottom: 40px;
-      }
     }
-    &__button {
-      padding: 45px 67px;
-      font-size: 24px;
-      line-height: 31.54px;
+    .header {
+        top: 23px;
+        &__menu {
+            display: none;
+        }
+        .burger-btn {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 50px;
+            height: 50px;
+            background-image: url("../img/header/burger-btn.png");
+            background-size: cover;
+            cursor: pointer;
+        }
     }
-  }
-  .competencies {
-    &__title {
-      margin-bottom: 28px;
+    .main-block {
+        padding-top: 368px;
+        padding-bottom: 60px;
+        &__title {
+            font-size: 60px;
+        }
     }
-    .competence {
-      &__img-box {
-        margin-bottom: 10px;
-      }
-      &__title {
-        margin-bottom: 13px;
-      }
-      &__desc {
-        font-size: 18px;
-        line-height: 23.4px;
-      }
+    .projects {
+        img {
+            height: 445px;
+        }
+        &__list {
+            margin-top: 53px;
+            margin-bottom: 120px;
+        }
+        .project {
+            &__title {
+                font-size: 28px;
+                line-height: 36.4px;
+                bottom: 76px;
+                left: 40px;
+            }
+            &__subtitle {
+                padding: 8px 16px;
+                font-size: 16px;
+                line-height: 21.86px;
+                border-radius: 80px;
+                left: 40px;
+                top: 40px;
+            }
+            &__desc {
+                font-size: 24px;
+                line-height: 31.2px;
+                left: 40px;
+                bottom: 40px;
+            }
+        }
+        &__button {
+            padding: 45px 67px;
+            font-size: 24px;
+            line-height: 31.54px;
+        }
     }
-  }
-  .services {
-    &__title {
-      margin-bottom: 60px;
+    .competencies {
+        &__title {
+            margin-bottom: 28px;
+        }
+        .competence {
+            &__img-box {
+                margin-bottom: 10px;
+            }
+            &__title {
+                margin-bottom: 13px;
+            }
+            &__desc {
+                font-size: 18px;
+                line-height: 23.4px;
+            }
+        }
     }
-    .service {
-      margin-bottom: 32px;
-      &__head {
-        height: 162px;
-      }
-      &__text-block {
-        padding: 32px;
-      }
-      &__subtitle {
-        font-size: 45px;
-        line-height: 49.5px;
-        max-width: 380px;
-        margin-right: 40px;
-      }
+    .services {
+        &__title {
+            margin-bottom: 60px;
+        }
+        .service {
+            margin-bottom: 32px;
+            &__head {
+                height: 162px;
+            }
+            &__text-block {
+                padding: 32px;
+            }
+            &__subtitle {
+                font-size: 45px;
+                line-height: 49.5px;
+                max-width: 380px;
+                margin-right: 40px;
+            }
+        }
     }
-  }
-  .feedback {
-    height: 484px;
-    &__title {
-      margin-top: 50px;
-      margin-bottom: 40px;
-      max-width: 373px;
-      font-size: 45px;
-      line-height: 40.5px;
+    .feedback {
+        height: 484px;
+        &__title {
+            margin-top: 50px;
+            margin-bottom: 40px;
+            max-width: 373px;
+            font-size: 45px;
+            line-height: 40.5px;
+        }
+        &__input {
+            padding: 10px 24px;
+            font-size: 16px;
+            line-height: 20.8px;
+            &:first-of-type {
+                margin-bottom: 17px;
+            }
+        }
+        &__send-btn {
+            padding: 12px 13px 14px 14px;
+            margin-top: 40px;
+            margin-bottom: 86px;
+            width: 304px;
+            font-size: 16px;
+            line-height: 20.8px;
+        }
     }
-    &__input {
-      padding: 10px 24px;
-      font-size: 16px;
-      line-height: 20.8px;
-      &:first-of-type {
-        margin-bottom: 17px;
-      }
+    .footer {
+        margin-top: 7px;
+        padding-top: 51px;
+        &__title,
+        &__social-link {
+            font-size: 16px;
+            line-height: 21.86px;
+        }
+        &__social:not(:last-of-type) {
+            margin-right: 14px;
+        }
+        &__wrapper_bottom {
+            margin-top: 43px;
+        }
+        &__all-rights,
+        &__political {
+            font-size: 14px;
+            line-height: 19.12px;
+        }
     }
-    &__send-btn {
-      padding: 12px 13px 14px 14px;
-      margin-top: 40px;
-      margin-bottom: 86px;
-      width: 304px;
-      font-size: 16px;
-      line-height: 20.8px;
-
-    }
-  }
-  .footer {
-    margin-top: 7px;
-    padding-top: 51px;
-    &__title, &__social-link {
-      font-size: 16px;
-      line-height: 21.86px;
-    }
-    &__social:not(:last-of-type) {
-      margin-right: 14px;
-    }
-    &__wrapper_bottom {
-      margin-top: 43px;
-    }
-    &__all-rights, &__political {
-      font-size: 14px;
-      line-height: 19.12px;
-    }
-  }
 }
 
 @media (max-width: 767px) {
-  .feedback {
-      &__title {
-          font-size: 35px;
-          max-width: 300px;
-      }
-  }
+    .feedback {
+        &__title {
+            font-size: 35px;
+            max-width: 300px;
+        }
+    }
 }
 
 @media (max-width: 640px) {
-  .projects {
-    &__button {
-      display: block;
-      text-align: center;
+    .projects {
+        &__button {
+            display: block;
+            text-align: center;
+        }
     }
-  }
 
-  .competencies__list {
-    flex-direction: column;
-  }
+    .competencies__list {
+        flex-direction: column;
+    }
 
-  .feedback {
-    &__title {
-      max-width: 100%;
-      width: 77.5%;
+    .service {
+        &__text-block {
+            flex-direction: column;
+        }
+        &__subtitle, &__desc {
+          width: 100%;
+        }
     }
-    &__input {
-      width: 100%;
-    }
-    &__send-btn {
-      width: 100%;
 
+    .feedback {
+        &__text-block {
+          width: 95%;
+        }
+        &__title {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            // width: 77.5%;
+        }
+        &__input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        &__send-btn {
+            width: 100%;
+        }
+
+        &__back-img {
+            display: none;
+        }
     }
-    
-    &__back-img {
-      display: none;
+
+    .footer {
+      &__wrapper {
+        column-gap: 30px;
+      }
+      &__social-list {
+        flex-wrap: wrap;
+        // flex-direction: column;
+      }
     }
-  }
 }
 
 // сделать мудиа при 500пх и ниже
