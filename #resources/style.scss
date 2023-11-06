@@ -190,6 +190,10 @@ $green-color: #687db4;
     }
   }
 
+  .competencies__list {
+    flex-direction: column;
+  }
+
   .feedback {
     &__title {
       max-width: 100%;

@@ -555,6 +555,9 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     display: block;
     text-align: center;
   }
+  .competencies__list {
+    flex-direction: column;
+  }
   .feedback__title {
     max-width: 100%;
     width: 77.5%;
