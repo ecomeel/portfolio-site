@@ -182,7 +182,14 @@ $green-color: #687db4;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
+  .projects {
+    &__button {
+      display: block;
+      text-align: center;
+    }
+  }
+
   .feedback {
     &__title {
       max-width: 100%;
@@ -201,7 +208,6 @@ $green-color: #687db4;
     }
   }
 }
-
 
 // сделать мудиа при 500пх и ниже
 // сделать бургер
