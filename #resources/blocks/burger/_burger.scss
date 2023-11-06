@@ -1,0 +1,52 @@
+.burger {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(7px);
+    &__content {
+        padding-top: 50px;
+        width: 100%;
+
+        & > *:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    &__link {
+        text-align: center;
+        font-size: 30px;
+
+        & > a {
+            transition: all .4s ease-in-out;
+            padding: 5px;
+
+            &:hover {
+                border: 1px solid #ffffff6f;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    &__close-btn {
+        cursor: pointer;
+        margin-top: 30px;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+    }
+
+    &__cross {
+        padding: 5px;
+        width: 50px;
+        transition: all .4s;
+
+        &:hover {
+            border: 1px solid #ffffff6f;
+            border-radius: 30px;
+        }
+    }
+}

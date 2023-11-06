@@ -11,3 +11,12 @@
     color: $green-color;
     @extend %subtitle-text;
 }
+
+.active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.deactive-scroll {
+    overflow-y: hidden;
+}

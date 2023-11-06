@@ -13,6 +13,7 @@ $green-color: #687db4;
 @import "blocks/services";
 @import "blocks/feedback";
 @import "blocks/footer";
+@import 'blocks/burger/burger';
 
 @media (max-width: 1200px) {
     ._container {
