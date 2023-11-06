@@ -13,7 +13,7 @@ $green-color: #687db4;
 @import "blocks/services";
 @import "blocks/feedback";
 @import "blocks/footer";
-@import 'blocks/burger/burger';
+@import "blocks/burger/burger";
 
 @media (max-width: 1200px) {
     ._container {
@@ -184,10 +184,42 @@ $green-color: #687db4;
 }
 
 @media (max-width: 640px) {
+    .page > *:not(:first-child) {
+        margin-top: 70px;
+    }
+
+    .main-block {
+        padding-top: 270px;
+        padding-bottom: 30px;
+
+        &__title {
+            margin-top: 20px;
+            font-size: 50px;
+            line-height: 45px;
+        }
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 37px;
+        text-align: center;
+    }
+
     .projects {
+        &__list {
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
         &__button {
+            padding: 30px 67px;
             display: block;
             text-align: center;
+        }
+
+        .project {
+            &__title {
+                bottom: 100px;
+            }
         }
     }
 
@@ -195,24 +227,44 @@ $green-color: #687db4;
         flex-direction: column;
     }
 
-    .service {
-        &__text-block {
-            flex-direction: column;
+    .services {
+        &__title {
+            max-width: 100%;
+            margin-bottom: 30px;
         }
-        &__subtitle, &__desc {
-          width: 100%;
+
+        .service {
+            &__text-block {
+                padding: 20px !important;
+                flex-direction: column;
+            }
+            &__subtitle,
+            &__desc {
+                width: 100%;
+            }
+
+            &__subtitle {
+                font-size: 28px;
+                line-height: 25px;
+            }
+
+            &__desc {
+                font-size: 18px;
+                line-height: 23px;
+            }
         }
     }
 
     .feedback {
+        height: 400px;
         &__text-block {
-          width: 95%;
+            width: 95%;
         }
         &__title {
+            margin-top: 30px;
             width: 100%;
             max-width: 100%;
             text-align: center;
-            // width: 77.5%;
         }
         &__input {
             width: 100%;
@@ -228,14 +280,12 @@ $green-color: #687db4;
     }
 
     .footer {
-      &__wrapper {
-        column-gap: 30px;
-      }
-      &__social-list {
-        flex-wrap: wrap;
-      }
+        padding-top: 35px;
+        &__wrapper {
+            column-gap: 30px;
+        }
+        &__social-list {
+            flex-wrap: wrap;
+        }
     }
 }
-
-// сделать мудиа при 500пх и ниже
-// сделать бургер
