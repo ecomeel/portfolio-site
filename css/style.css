@@ -213,6 +213,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   line-height: 45.5px;
 }
 .projects__list .project__title_black {
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
@@ -235,6 +237,8 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   line-height: 39px;
 }
 .projects__list .project__desc_black {
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   color: black;

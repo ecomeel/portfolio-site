@@ -24,9 +24,11 @@
                 line-height: 45.5px;
 
                 &_black {
-                  border-radius: 10px;
-                  background-color: rgba($color: #fff, $alpha: .7);
-                  color: black;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 10px;
+                    background-color: rgba($color: #fff, $alpha: 0.7);
+                    color: black;
                 }
             }
             &__subtitle {
@@ -47,9 +49,11 @@
                 line-height: 39px;
 
                 &_black {
-                  border-radius: 10px;
-                  background-color: rgba($color: #fff, $alpha: .7);
-                  color: black
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 10px;
+                    background-color: rgba($color: #fff, $alpha: 0.7);
+                    color: black;
                 }
             }
 
