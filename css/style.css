@@ -648,7 +648,7 @@ h1, h2, h3, h4, h5, h6, p, a, div {
     text-align: center;
   }
   .projects .project__title {
-    bottom: 100px;
+    bottom: 120px;
   }
   .competencies__list {
     flex-direction: column;
@@ -702,5 +702,12 @@ h1, h2, h3, h4, h5, h6, p, a, div {
   }
   .footer__social-list {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 530px) {
+  .projects .project__desc {
+    width: 100%;
+    text-align: center;
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

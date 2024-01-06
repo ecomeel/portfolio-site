@@ -218,7 +218,7 @@ $green-color: #687db4;
 
         .project {
             &__title {
-                bottom: 100px;
+                bottom: 120px;
             }
         }
     }
@@ -288,4 +288,17 @@ $green-color: #687db4;
             flex-wrap: wrap;
         }
     }
+}
+
+@media(max-width: 530px) {
+    .projects {
+        .project {
+            &__desc {
+                width: 100%;
+                text-align: center;
+                left: 0;
+            }
+        }
+    }
+
 }
