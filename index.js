@@ -1,3 +1,4 @@
+// Burger
 const CLASSNAME_BLOCK_VISIBILITY = "active";
 const CLASSNAME_CHANGE_SCROLL = "deactive-scroll";
 
@@ -12,12 +13,12 @@ function changeBurgerVision() {
 
 function handleSelectedLinkClick(event) {
     const link = event.target;
-    if (link.tagName == 'A') {
-        changeBurgerVision()
+    if (link.tagName == "A") {
+        changeBurgerVision();
     }
 }
 
 openBurgerBtnNode.addEventListener("click", () => changeBurgerVision());
 closeBurgerBtnNode.addEventListener("click", () => changeBurgerVision());
 
-burgerPopupNode.addEventListener('click', handleSelectedLinkClick);
+burgerPopupNode.addEventListener("click", handleSelectedLinkClick);
