@@ -1,0 +1,25 @@
+@import '../../../styles/vars.scss';
+
+.wrapper {
+    padding-top: 334px;
+    padding-bottom: 89px;
+    background-image: url("./img/main-block/main-block.jpeg");
+    background-position: 50% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+  margin-top: 29px;
+  margin-left: -7px;
+  max-width: 919px;
+  color: $blue-color;
+  font-size: 80px;
+  line-height: 70px;
+}
+
+.description {
+  max-width: 430px;
+  font-size: 20px;
+  line-height: 26px;
+}

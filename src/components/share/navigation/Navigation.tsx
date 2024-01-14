@@ -1,6 +1,10 @@
-export const Navigation = () => {
+import {FC } from 'react'
+
+import styles from './navigation.module.scss'
+
+export const Navigation: FC = () => {
     return (
-        <ul>
+        <ul className={styles.menu}>
             <li>
                 <a href="#portfolio">портфолио</a>
             </li>
