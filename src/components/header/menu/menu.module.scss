@@ -1,0 +1,25 @@
+@import '../../../styles/vars.scss';
+
+.menu {
+    opacity: 0;
+    visibility: hidden;
+    & > :first-child {
+        display: flex;
+        column-gap: 40px;
+
+        & > * {
+          padding-bottom: 10px;
+          font-size: 18px;
+          border-bottom: 1px solid transparent;
+          line-height: 23.4px;
+
+          transition: all linear .2s;
+
+          &:hover {
+            opacity: .5;
+            border-bottom: 1px solid gray;
+            transform: scale(1.1);
+          }
+        }
+    }
+}

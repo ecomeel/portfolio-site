@@ -1,0 +1,27 @@
+@import "./vars";
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #fff;
+    font-size: 55px;
+    line-height: 72.5px;
+}
+
+.subtitle {
+    color: $blue-color;
+    font-size: 35px;
+    line-height: 45.5px;
+}
+
+.active-popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.deactive-scroll {
+  overflow-y: hidden;
+}
