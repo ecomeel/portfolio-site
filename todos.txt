@@ -1,0 +1,3 @@
+set imgSrc to projects
+stylize portfolio & project
+change background scroll to dark color

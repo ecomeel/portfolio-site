@@ -9,6 +9,7 @@ function App() {
             <Header />
             <Aside />
             <Content />
+
         </>
     );
 }

@@ -1,10 +1,14 @@
-import styles from './content.module.scss'
-import { Start } from './start/Start'
+import styles from "./content.module.scss";
+import { Start } from "./start/Start";
+import { Portfolio } from "./portfolio/Portfolio";
 
 export const Content = () => {
   return (
-    <main className={styles.content}>
+    <main>
       <Start />
+      <div className={`${styles.blocks} container`}>
+        <Portfolio />
+      </div>
     </main>
-  )
-}
+  );
+};

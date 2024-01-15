@@ -1,25 +1,35 @@
-@import '../../../styles/vars.scss';
+@import "../../../styles/vars.scss";
 
 .wrapper {
-    padding-top: 334px;
-    padding-bottom: 89px;
     background-image: url("./img/main-block/main-block.jpeg");
-    background-position: 50% 25%;
+    background-position: 50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    & > :first-child {
+        height: 100vh;
+        position: relative;
+    }
+}
+
+.text {
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
 }
 
 .title {
-  margin-top: 29px;
-  margin-left: -7px;
-  max-width: 919px;
-  color: $blue-color;
-  font-size: 80px;
-  line-height: 70px;
+    margin-top: 29px;
+    margin-left: -7px;
+    max-width: 919px;
+    color: $blue-color;
+    font-size: 80px;
+    line-height: 70px;
 }
 
 .description {
-  max-width: 430px;
-  font-size: 20px;
-  line-height: 26px;
+    max-width: 430px;
+    font-size: 20px;
+    line-height: 26px;
 }

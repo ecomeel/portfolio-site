@@ -3,8 +3,6 @@
 .logo {
   padding: 15px 25px;
 
-  display: inline-block;
-
   background-color: #beb3b34a;
   border-radius: 47%;
 
@@ -13,10 +11,4 @@
   font-weight: 700;
   font-size: 42.41px;
   color: $blue-color;
-
-  transition: opacity linear .1s;
-
-  &:hover {
-    opacity: .8;
-  }
 }
