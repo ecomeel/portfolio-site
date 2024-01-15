@@ -9,13 +9,13 @@ export const Navigation: FC = () => {
                 <a href="#portfolio">портфолио</a>
             </li>
             <li>
-                <a href="#compet">компетенции</a>
+                <a href="#competencies">компетенции</a>
             </li>
             <li>
                 <a href="#services">услуги</a>
             </li>
             <li>
-                <a href="#feedback">контакты</a>
+                <a href="#footer">контакты</a>
             </li>
         </ul>
     );

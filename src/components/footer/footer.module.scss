@@ -1,0 +1,26 @@
+.footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  color: #000;
+}
+.title {
+  font-family: Manrope;
+}
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  margin-top: 20px;
+  & > * {
+    color: rgba($color: #000000, $alpha: 0.5);
+    font-family: Manrope;
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+}

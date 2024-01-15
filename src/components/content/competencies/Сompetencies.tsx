@@ -6,7 +6,7 @@ import { Competence } from "./competence/Competence";
 
 export const Competencies: FC = () => {
   return (
-    <section>
+    <section id="competencies">
       <h2 className="title">Мои компетенции</h2>
       <ul className={styles.list}>
         {competenciesList.map((competence) => (

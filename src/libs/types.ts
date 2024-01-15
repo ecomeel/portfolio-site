@@ -14,3 +14,8 @@ export interface ICompetence {
 }
 
 export interface IService extends ICompetence {}
+
+export interface ISocial {
+  title: string;
+  link: string;
+}

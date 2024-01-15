@@ -1,0 +1,16 @@
+.link {
+  color: #000;
+
+  transition: opacity linear 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.social {
+  transition: transform linear .2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -6,7 +6,7 @@ import styles from "./services.module.scss";
 
 export const Services: FC = () => {
   return (
-    <section>
+    <section id="services">
       <h2 className={`title ${styles.title}`}>
         Помогаю реализовать широкий спектр задач
       </h2>
