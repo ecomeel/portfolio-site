@@ -9,7 +9,9 @@ export default defineConfig({
     alias: {
       components: "/src/components",
       libs: "/src/libs/",
-      styles: "/src/styles/"
+      styles: "/src/styles/",
+      datas: "/src/datas/",
+      assets: "/src/assets/"
     },
   },
   base: "./",

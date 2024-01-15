@@ -17,7 +17,7 @@ export const Project: FC<IProject> = ({
       <p className={styles.technologies}>{technologies}</p>
       <a href={url} target="_blank">
         <img
-          src={`./img/projects/${imgSrc}`}
+          src={imgSrc}
           alt={name}
           className={styles.img}
         />

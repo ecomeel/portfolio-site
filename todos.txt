@@ -1,4 +1,4 @@
-stylize portfolio
-change background scroll to dark color
+
+competencies to swiper
 burger menu
 adaptive layout

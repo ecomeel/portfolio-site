@@ -5,3 +5,10 @@ export interface IProject {
   imgSrc: string;
   url: string;
 }
+
+export interface ICompetence {
+  title: string;
+  description: string;
+  img: string;
+  imgAlt: string;
+}
