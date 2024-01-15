@@ -1,5 +1,5 @@
 import { Project } from "./project/Project";
-import { projectsList } from "../../../libs/datas";
+import { projectsList } from "libs/datas";
 
 export const Portfolio = () => {
   return (

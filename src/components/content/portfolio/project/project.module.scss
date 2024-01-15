@@ -1,0 +1,49 @@
+// @import "../../../../styles/vars";
+@import "/src/styles/vars";
+
+.project {
+  max-width: 100%;
+  position: relative;
+
+  transition: opacity linear .2s;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+.name {
+  position: absolute;
+  left: 50px;
+  bottom: 94px;
+  z-index: 3;
+
+  font-size: 35px;
+  line-height: 45px;
+}
+.description {
+  padding: 10px 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 3;
+
+  border-radius: 100px;
+  background-color: $blue-color;
+}
+.technologies {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 3;
+
+  font-size: 30px;
+  line-height: 39px;
+}
+.img {
+  width: 100%;
+  opacity: 0.7;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 30px;
+  height: 500px;
+}

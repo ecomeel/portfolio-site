@@ -1,3 +1,4 @@
-set imgSrc to projects
-stylize portfolio & project
+stylize portfolio
 change background scroll to dark color
+burger menu
+adaptive layout
