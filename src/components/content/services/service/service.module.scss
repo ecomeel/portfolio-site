@@ -1,0 +1,29 @@
+@import "/src/styles/vars";
+
+.service {
+  &:not(:last-of-type) {
+    margin-bottom: 40px;
+  }
+}
+.image {
+  width: 100%;
+}
+.wrapper {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #2b2e31;
+  border-radius: 30px;
+
+  & > * {
+    flex: 1 0 50%;
+  }
+}
+.title {
+  color: $blue-color;
+  font-size: 40px;
+  line-height: 45px;
+}
+.description {
+  line-height: 35px;
+}

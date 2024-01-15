@@ -12,3 +12,5 @@ export interface ICompetence {
   img: string;
   imgAlt: string;
 }
+
+export interface IService extends ICompetence {}
