@@ -1,22 +1,22 @@
-// ._container {
-//     max-width: 1150px;
-//     margin: 0 auto;
-// }
+._container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
 
-// .title {
-//     color: white;
-// //     @extend %title-text;
-// // }
-// .subtitle {
-//     color: $green-color;
-//     @extend %subtitle-text;
+.title {
+    color: white;
+//     @extend %title-text;
 // }
+.subtitle {
+    color: $green-color;
+    @extend %subtitle-text;
+}
 
-// .active {
-//     visibility: visible !important;
-//     opacity: 1 !important;
-// }
+.active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 
-// .deactive-scroll {
-//     overflow-y: hidden;
-// }
+.deactive-scroll {
+    overflow-y: hidden;
+}

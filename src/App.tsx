@@ -5,14 +5,14 @@ import { Content } from "./components/content/Content";
 import { Footer } from "components/footer/Footer";
 
 function App() {
-    return (
-        <>
-            <Header />
-            <Aside />
-            <Content />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Aside />
+      <Content />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

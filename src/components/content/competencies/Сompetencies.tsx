@@ -5,6 +5,7 @@ import styles from "./competencies.module.scss";
 import { Competence } from "./competence/Competence";
 
 export const Competencies: FC = () => {
+
   return (
     <section id="competencies">
       <h2 className="title">Мои компетенции</h2>
