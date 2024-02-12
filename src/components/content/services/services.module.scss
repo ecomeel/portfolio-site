@@ -2,6 +2,11 @@
   font-size: 45px !important;
   line-height: 55px !important;
   max-width: 550px;
+
+  @media (max-width: 768px) {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
 }
 .dots {
   margin-top: 20px;
@@ -19,5 +24,10 @@
     &:hover {
       cursor: pointer;
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 5px;
+ 
   }
 }

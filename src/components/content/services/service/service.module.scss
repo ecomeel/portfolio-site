@@ -16,6 +16,12 @@
   border-radius: 30px;
   min-height: 290px;
 
+  @media (max-width: 768px) {
+    padding: 20px;
+    flex-direction: column;
+    min-height: 0px;
+  }
+
   & > * {
     flex: 1 0 50%;
   }
@@ -24,7 +30,18 @@
   color: $blue-color;
   font-size: 40px;
   line-height: 45px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 .description {
   line-height: 35px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
