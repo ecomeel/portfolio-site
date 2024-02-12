@@ -4,9 +4,13 @@ import { Navigation } from "../../share/navigation/Navigation";
 import styles from "./menu.module.scss";
 
 export const Menu: FC = () => {
-    return (
-        <nav className={styles.menu}>
-            <Navigation />
-        </nav>
-    );
+  function handleBurgerClick() {
+
+  }
+  return (
+    <nav className={styles.menu}>
+      <Navigation />
+      <button className={styles.burger} onClick={handleBurgerClick}></button>
+    </nav>
+  );
 };

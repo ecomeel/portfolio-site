@@ -1,9 +1,6 @@
-.menu {
-
-}
 .item {
-  cursor: pointer;
-  &:hover {
-
+  @media(max-width: 768px) {
+    opacity: 0;
+    visibility: hidden;
   }
 }

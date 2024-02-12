@@ -3,6 +3,11 @@
 .container {
   max-width: 1150px;
   margin: 0 auto;
+
+  @media(max-width: 1160px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 
@@ -12,6 +17,12 @@
   color: #fff;
   font-size: 55px;
   line-height: 72.5px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 
 .subtitle {

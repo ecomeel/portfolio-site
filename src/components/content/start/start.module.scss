@@ -18,6 +18,10 @@
     position: absolute;
     left: 0;
     bottom: 100px;
+
+    @media(max-width: 768px) {
+      bottom: 70px;
+    }
 }
 
 .title {
@@ -27,6 +31,11 @@
     color: $blue-color;
     font-size: 80px;
     line-height: 70px;
+
+    @media(max-width: 768px) {
+      padding-top: 20px;
+      font-size: 50px;
+    }
 }
 
 .description {

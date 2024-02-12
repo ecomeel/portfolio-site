@@ -10,7 +10,6 @@ export const Header: FC= () => {
       <div className="container">
         <Logo />
         <Menu />
-
       </div>
     </header>
   )

@@ -12,13 +12,22 @@
   }
 }
 .name {
+  padding: 5px;
   position: absolute;
   left: 50px;
-  bottom: 94px;
+  bottom: 104px;
   z-index: 3;
 
   font-size: 35px;
   line-height: 45px;
+  background-color: rgba($color: #000000, $alpha: .2);
+  border-radius: 10px;
+
+  @media(max-width: 768px) {
+    bottom: 120px;
+    left: 30px;
+    font-size: 25px;
+  }
 }
 .description {
   padding: 10px 20px;
@@ -29,8 +38,14 @@
 
   border-radius: 100px;
   background-color: $blue-color;
+
+  @media(max-width: 768px) {
+    top: 30px;
+    left: 30px;
+  }
 }
 .technologies {
+  padding: 5px;
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -38,6 +53,14 @@
 
   font-size: 30px;
   line-height: 39px;
+  background-color: rgba($color: #000000, $alpha: .2);
+  border-radius: 10px;
+
+  @media(max-width: 768px) {
+    left: 30px;
+    bottom: 30px;
+    font-size: 25px;
+  }
 }
 .img {
   width: 100%;
@@ -46,4 +69,8 @@
   object-position: center center;
   border-radius: 30px;
   height: 500px;
+
+  @media(max-width: 768px) {
+    height: 400px
+  }
 }

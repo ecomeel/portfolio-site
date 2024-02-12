@@ -28,9 +28,9 @@ export const projectsList: IProject[] = [
     url: "https://ecomeel.github.io/autorization/",
   },
   {
-    name: "Blog",
+    name: "Users Blogs",
     technologies: "Vue, Vuex, Vue Router",
-    description: "Users Blog",
+    description: "Блоги",
     imgSrc: usersBlogImage,
     url: "https://ecomeel.github.io/users-blog/#/",
   },

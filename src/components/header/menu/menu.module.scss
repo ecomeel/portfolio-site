@@ -1,7 +1,8 @@
 @import "../../../styles/vars.scss";
 
 .menu {
-  margin-right: 30px;
+  position: relative;
+  margin-right: 10px;
   & > :first-child {
     display: flex;
     align-items: center;
@@ -22,5 +23,27 @@
         }
       }
     }
+  }
+}
+
+.burger {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  height: 45px;
+  width: 45px;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  background: url('../../../assets/burger-icon.png') no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  cursor: pointer;
+
+  @media(max-width: 768px) {
+    opacity: 1;
+    visibility: visible;
   }
 }
