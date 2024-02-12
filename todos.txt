@@ -1,3 +1,4 @@
 
+parallax page change
 burger menu
 adaptive layout

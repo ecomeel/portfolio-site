@@ -5,7 +5,7 @@ import styles from './navigation.module.scss'
 export const Navigation: FC = () => {
     return (
         <ul className={styles.menu}>
-            <li>
+            <li className={styles.item}>
                 <a href="#portfolio">портфолио</a>
             </li>
             <li>
