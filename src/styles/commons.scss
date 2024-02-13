@@ -23,12 +23,22 @@
     font-size: 35px;
     line-height: 45px;
   }
+  @media (max-width: 500px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 .subtitle {
   color: $blue-color;
   font-size: 35px;
   line-height: 45.5px;
+
+  @media (max-width: 500px) {
+    font-size: 25px;
+    line-height: 30px;   
+  }
 }
 
 .active-popup {

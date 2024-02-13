@@ -6,6 +6,10 @@
   @media (max-width: 768px) {
    font-size: 20px; 
   }
+  @media (max-width: 500px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
 
   &:hover {
     opacity: 0.5;

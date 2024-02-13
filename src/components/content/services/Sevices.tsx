@@ -36,7 +36,7 @@ export const Services: FC = () => {
         className="mySwiper"
       >
         {servicesList.map((service) => (
-          <SwiperSlide className={styles.service}>
+          <SwiperSlide className={styles.service} key={service.title}>
             <img
               className={styles.image}
               src={service.img}

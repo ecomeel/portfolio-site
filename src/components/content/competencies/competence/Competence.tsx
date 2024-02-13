@@ -12,7 +12,7 @@ export const Competence: FC<ICompetence> = ({
   return (
     <li className={styles.competence}>
       <div className={styles.wrapper}>
-        <img src={img} alt={imgAlt} />
+        <img className={styles.icon} src={img} alt={imgAlt} />
       </div>
       <h3 className={`${styles.title} subtitle`}>{title}</h3>
       <p className={styles.description}>{description}</p>
