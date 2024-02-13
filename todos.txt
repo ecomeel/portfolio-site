@@ -1,8 +1,6 @@
-
 parallax page change
-burger menu
 Дробдауны в компетенциях
 
 Удалить компонент Service
-
-Отрытие бургера
+Удалить aside
+Удалить Navigation или поправить

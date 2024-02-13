@@ -46,6 +46,16 @@
   opacity: 1;
 }
 
+.active-burger {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translate(0, 0);
+}
+
 .deactive-scroll {
   overflow-y: hidden;
+}
+
+.rotate-icon {
+  transform: rotate(90deg);
 }
