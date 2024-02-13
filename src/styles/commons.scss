@@ -1,0 +1,61 @@
+@import "./vars";
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  @media(max-width: 1160px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
+.title {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 55px;
+  line-height: 72.5px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 45px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.subtitle {
+  color: $blue-color;
+  font-size: 35px;
+  line-height: 45.5px;
+
+  @media (max-width: 500px) {
+    font-size: 25px;
+    line-height: 30px;   
+  }
+}
+
+.active-popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active-burger {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translate(0, 0);
+}
+
+.deactive-scroll {
+  overflow-y: hidden;
+}
+
+.rotate-icon {
+  transform: rotate(90deg);
+}

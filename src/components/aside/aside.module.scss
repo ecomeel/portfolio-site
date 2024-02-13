@@ -1,0 +1,23 @@
+@import '../../styles/vars';
+
+.menu {
+  position: fixed;
+  z-index: 10;
+  right: 30px;
+  top: 40%;
+
+  & > :first-child {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      padding: 20px 30px 20px 0;
+
+      border-right: 3px solid $gray-color;
+
+      & > * {
+        color: $gray-color
+      }
+    }
+  }
+}

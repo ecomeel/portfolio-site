@@ -1,0 +1,79 @@
+@import "/src/styles/vars";
+
+.title {
+  font-size: 45px !important;
+  line-height: 55px !important;
+  max-width: 550px;
+
+  @media (max-width: 768px) {
+    font-size: 35px !important;
+    line-height: 40px !important;
+  }
+  @media (max-width: 500px) {
+    font-size: 25px !important;
+    line-height: 30px !important;
+    max-width: 100%;
+  }
+}
+
+.image {
+  width: 100%;
+  @media (max-width: 500px) {
+    height: 100px;
+  }
+}
+.wrapper {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #2b2e31;
+  border-radius: 30px;
+  min-height: 290px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    padding-bottom: 30px;
+    flex: 0 1;
+
+    flex-direction: column;
+    min-height: 290px;
+  }
+  @media (max-width: 500px) {
+    padding: 10px;
+    padding-bottom: 30px;
+    min-height: 200px;
+  }
+
+  & > * {
+    flex: 1 0 50%;
+  }
+}
+.subtitle {
+  color: $blue-color;
+  font-size: 40px;
+  line-height: 45px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+.description {
+  line-height: 35px;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

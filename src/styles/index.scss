@@ -1,0 +1,27 @@
+@import './reset';
+@import './commons';
+
+html, body {
+  // background-color: #000;
+  background-color: #1c1d1f;
+  // background: linear-gradient(to bottom, #161514, 70%, #797c92);
+  // background-attachment: scroll;
+  color: #fff;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 22px;
+  line-height: 28.6px;
+  font-weight: 400;
+  min-height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+// body::-webkit-scrollbar {
+//   display: none;
+// }
+
+a {
+  color: #fff;
+}
+h1, h2, h3, h4, h5, h6, p, a, div {
+  letter-spacing: -0.03em;
+}

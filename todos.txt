@@ -1,0 +1,6 @@
+parallax page change
+Дробдауны в компетенциях
+
+Удалить компонент Service
+Удалить aside
+Удалить Navigation или поправить в компоненете Menu

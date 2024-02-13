@@ -1,0 +1,60 @@
+@import "../../../styles/vars.scss";
+
+.menu {
+  position: relative;
+  margin-right: 10px;
+  & > :first-child {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    @media (max-width: 768px) {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      flex-direction: column-reverse;
+    }
+
+    & > * {
+      font-size: 18px;
+      border-bottom: 1px solid transparent;
+      line-height: 23.4px;
+
+      transition: all linear 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.2);
+        & > a {
+          color: $blue-color;
+        }
+      }
+    }
+  }
+}
+
+.burger {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  height: 45px;
+  width: 45px;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  background: url('../../../assets/burger-icon.png') no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  cursor: pointer;
+
+  transition: all linear .5s;
+
+  @media(max-width: 768px) {
+    opacity: 1;
+    visibility: visible;
+  }
+}

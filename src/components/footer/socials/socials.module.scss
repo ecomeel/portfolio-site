@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  column-gap: 24px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: right;
+  }
+}

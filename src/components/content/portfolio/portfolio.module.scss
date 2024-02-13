@@ -1,0 +1,49 @@
+@import "/src/styles/vars";
+
+.projects {
+  margin-bottom: 50px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 15px;   
+  }
+}
+.button {
+  margin: 0 auto;
+  padding: 56px 120px 58px 120px;
+  // display: inline-block;
+  display: block;
+  text-align: center;
+  width: 70%;
+  box-sizing: border-box;
+  background-color: $blue-color;
+  border-radius: 10px;
+  font-size: 30px;
+  line-height: 39px;
+  color: #000;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: transparent;
+    color: $blue-color;
+    outline: 1px solid $blue-color;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px;
+    width: 80%;
+    font-size: 25px;
+
+    &:hover {
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+      padding: 20px 10px;
+      font-size: 20px;
+      line-height: 23px;
+  }
+}
