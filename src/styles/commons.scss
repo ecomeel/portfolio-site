@@ -47,6 +47,8 @@
 }
 
 .active-burger {
+  display: flex !important;
+
   opacity: 1 !important;
   visibility: visible !important;
   transform: translate(0, 0);

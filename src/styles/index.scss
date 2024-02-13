@@ -19,6 +19,11 @@ html, body {
 // body::-webkit-scrollbar {
 //   display: none;
 // }
+body > *:first-of-type{
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+}
 
 a {
   color: #fff;

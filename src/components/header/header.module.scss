@@ -17,6 +17,7 @@
   position: relative;
 }
 .menu {
+  // display: none;
   opacity: 0;
   visibility: hidden;
   height: 100%;
@@ -27,7 +28,7 @@
   font-size: 20px;
   text-align: right;
 
-  display: flex;
+  // display: flex;
   flex-direction: column;
   row-gap: 10px;
 
