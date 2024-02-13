@@ -7,9 +7,14 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+
     & > :first-child {
         height: 100vh;
         position: relative;
+
+        // @media (max-width: 768px) {
+        //   height: 60vh;
+        // }
     }
 }
 

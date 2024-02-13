@@ -8,6 +8,10 @@
     align-items: center;
     column-gap: 40px;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     & > * {
       font-size: 18px;
       border-bottom: 1px solid transparent;
@@ -31,7 +35,7 @@
   visibility: hidden;
   position: absolute;
   right: 10px;
-  top: -5px;
+  top: -25px;
   height: 45px;
   width: 45px;
   z-index: 10;

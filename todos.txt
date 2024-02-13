@@ -3,5 +3,7 @@ parallax page change
 burger menu
 adaptive layout
 
+Удалить компонент Service
 
 Отрытие бургера
+Start page - background сделать меньше

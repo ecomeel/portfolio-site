@@ -12,6 +12,7 @@ export const Competencies: FC = () => {
       <ul className={styles.list}>
         {competenciesList.map((competence) => (
           <Competence 
+            key={competence.title}
             title={competence.title}
             description={competence.description}
             img={competence.img}

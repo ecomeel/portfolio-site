@@ -1,25 +1,22 @@
 import { FC } from "react";
 
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination} from "swiper/modules";
 
-import { servicesList } from "datas/services";
-import { Service } from "./service/Service";
+import "swiper/css";
+import "swiper/css/pagination";
+import './services.scss';
 import styles from "./services.module.scss";
 
+
+import { servicesList } from "datas/services";
+
 export const Services: FC = () => {
-  const settings = {
-    autoplay: true,
-    autoplaySpeed: 4000,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    dots: true,
-    dotsClass: styles.dots,
-    pauseOnHover: true
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
   };
 
   return (
@@ -27,16 +24,31 @@ export const Services: FC = () => {
       <h2 className={`title ${styles.title}`}>
         Помогаю реализовать широкий спектр задач
       </h2>
-      <Slider {...settings}>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={pagination}
+        modules={[Autoplay, Pagination]}
+        className="mySwiper"
+      >
         {servicesList.map((service) => (
-          <Service
-            title={service.title}
-            description={service.description}
-            img={service.img}
-            imgAlt={service.imgAlt}
-          />
+          <SwiperSlide className={styles.service}>
+            <img
+              className={styles.image}
+              src={service.img}
+              alt={service.imgAlt}
+            />
+            <div className={styles.wrapper}>
+              <h3 className={styles.subtitle}>{service.title}</h3>
+              <p className={styles.description}>{service.description}</p>
+            </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </section>
   );
 };
