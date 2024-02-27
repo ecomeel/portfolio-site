@@ -1,16 +1,25 @@
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 import styles from "./menu.module.scss";
 
 export const Menu: FC = () => {
   function handleBurgerClick() {
     const menuListNode = document.getElementById("menuList");
-    const burgerBtnNode = document.getElementById('burgerBtn')
+    const burgerBtnNode = document.getElementById("burgerBtn");
     menuListNode?.classList.toggle("active-burger");
     burgerBtnNode?.classList.toggle("rotate-icon");
   }
   return (
-    <nav className={styles.menu}>
+    <motion.nav
+      className={styles.menu}
+      initial={{ x: 1000 }}
+      animate={{ x: 0 }}
+      transition={{
+        duration: 1,
+        type: 'spring'
+      }}
+    >
       {/* <Navigation /> */}
       <ul className={styles.menu}>
         <li className={styles.item}>
@@ -26,7 +35,11 @@ export const Menu: FC = () => {
           <a href="#footer">контакты</a>
         </li>
       </ul>
-      <button id="burgerBtn" className={styles.burger} onClick={handleBurgerClick}></button>
-    </nav>
+      <button
+        id="burgerBtn"
+        className={styles.burger}
+        onClick={handleBurgerClick}
+      ></button>
+    </motion.nav>
   );
 };
