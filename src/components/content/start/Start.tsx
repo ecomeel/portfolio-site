@@ -7,12 +7,12 @@ export const Start = () => {
       <div className="container">
         <div className={styles.text}>
           <motion.p
-            initial={{ y: 1000 }}
-            animate={{ y: 0 }}
+            initial={{ y: 1000, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{
-              delay: .4,
-              duration: .5,
-              type: 'spring'
+              delay: 0.4,
+              duration: 0.5,
+              type: "spring",
             }}
             className={styles.description}
           >
@@ -23,8 +23,8 @@ export const Start = () => {
             initial={{ y: 1000 }}
             animate={{ y: 0 }}
             transition={{
-              duration: .5,
-              type: 'spring'
+              duration: 0.5,
+              type: "spring",
             }}
             className={styles.title}
           >

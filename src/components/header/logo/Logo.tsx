@@ -6,10 +6,12 @@ export const Logo: FC = () => {
     <motion.p
       className={styles.logo}
       initial={{
-        x: -1000
+        x: -1000,
+        opacity: 0
       }}
       animate={{
-        x: 0
+        x: 0,
+        opacity: 1
       }}
       transition={{
         duration: .8,

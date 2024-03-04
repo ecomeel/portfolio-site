@@ -10,15 +10,20 @@ export const Menu: FC = () => {
     menuListNode?.classList.toggle("active-burger");
     burgerBtnNode?.classList.toggle("rotate-icon");
   }
+  const navVariants = {
+    hidden: { x: 1000, opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+  };
   return (
     <motion.nav
       className={styles.menu}
-      initial={{ x: 1000 }}
-      animate={{ x: 0 }}
+      initial={'hidden'}
+      animate={'visible'}
       transition={{
         duration: 1,
-        type: 'spring'
+        type: "spring",
       }}
+      variants={navVariants}
     >
       {/* <Navigation /> */}
       <ul className={styles.menu}>

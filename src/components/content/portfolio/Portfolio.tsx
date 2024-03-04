@@ -2,14 +2,16 @@ import { Project } from "./project/Project";
 import { projectsList } from "datas/projects";
 import styles from "./portfolio.module.scss";
 
+
 export const Portfolio = () => {
   return (
     <section id="portfolio">
       <h2 className="title">Самые свежие проекты</h2>
       <ul className={styles.projects}>
-        {projectsList.map((project) => (
+        {projectsList.map((project, index) => (
           <Project
             key={project.name}
+            index = {index}
             name={project.name}
             technologies={project.technologies}
             description={project.description}

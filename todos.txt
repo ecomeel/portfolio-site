@@ -4,3 +4,4 @@ parallax page change
 Удалить компонент Service
 Удалить aside
 Удалить Navigation или поправить в компоненете Menu
+Сделать компонент aside в header
