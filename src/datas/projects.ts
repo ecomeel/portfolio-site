@@ -1,8 +1,6 @@
 import { IProject } from "../libs/types";
-import houseStaffImage from 'assets/projects/house-staff.png'
 import metricaImage from 'assets/projects/metrica.png'
 import registrationFormImage from 'assets/projects/registration-form.png'
-// import usersBlogImage from 'assets/projects/users-blog.png'
 import RcCityImage from "assets/projects/rc-city.png"
 import JokiJoyaImage from "assets/projects/joki-joya.png"
 import nothingStoreImage from 'assets/projects/nothing.png'
