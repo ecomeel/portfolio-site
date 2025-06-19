@@ -38,6 +38,11 @@
   font-size: 80px;
   line-height: 70px;
 
+  @media (max-width: 1220px) {
+    font-size: 6.5vw;
+    line-height: 1; 
+  }
+
   @media (max-width: 768px) {
     margin-left: 0px;
     margin-top: 20px;

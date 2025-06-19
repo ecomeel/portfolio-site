@@ -28,7 +28,7 @@ export const Start = () => {
             }}
             className={styles.title}
           >
-            Привет, я Саша — фронтенд разработчик
+            Привет, я Саша&nbsp;— фронтенд разработчик
           </motion.h1>
         </div>
       </div>
